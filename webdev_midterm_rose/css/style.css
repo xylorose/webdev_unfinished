@@ -1,0 +1,114 @@
+  .bg-1 { 
+    background-image: url(../images/lib.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d;
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff;
+    color: #555555;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar.navbar-default{
+    color: #ffffff;
+  }
+  .navbar-nav  li a:hover {
+    color: #7b709e !important;
+  }
+  .collapse.navbar-collapse:a{
+    color: white;
+  }
+  .navbar.navbar-default{
+      background: #964b01;
+      opacity: 95%;
+  }
+ .list{
+    color:white;
+  }
+  .text-dark.text-dark{
+    padding-top: 3%;
+    background-color: #474e5d;
+    color: white;
+  }
+  .text-center{
+    float: initial;
+    clear: left;
+  }
+  .text-center.text-warning{
+    float: left;
+    color: white;
+    font-size: 34px;
+  }
+  .text-center.text-dark{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .text-center.text-info{
+    float: left;
+    padding-top: 3%;
+    padding-left: 0;
+    color:white;
+    font-size: 25px;
+  }
+  .img-fluid{
+    float: center;
+
+  }
+  .row{
+    padding: 5%;
+    padding-left: 5%;
+  }
+  .col-sm-4{
+    position: relative;
+    width: 50%;
+  }
+ .img-responsive{
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding-top: 4%;
+  }
+  .try{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translate(-50% , 50%);
+    -ms-transform: translate(-50% , 50%);
+    text-align: center;
+  }
+  .col-sm-4:hover .img-responsive{
+    opacity: 0.3;
+  }
+  .col-sm-4:hover .try{
+    opacity: 1;
+  }
+  .middle{
+    color: black;
+    top: 0;
+    font-size: 15px;
+    /* padding: 10px 32px; */
+  }
+  /**footer**/
+  .container-fluid.bg-4.text-center{
+    background-color: gray;
+  }

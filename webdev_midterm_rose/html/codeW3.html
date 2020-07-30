@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Korean Drama Library</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: darkgray;
+      padding: 25px;
+    }
+   
+  </style>
+</head>
+<body>
+<h2><STRONG>Historical Movies</STRONG></h2>
+<table id="history" border="1" style="width: 100%; border: 1px solid black;">
+  <tr>
+      <th>Title</th>
+      <th>Year Released</th>
+      <th>Episodes</th>
+      <th>Starring</th>
+      <th>Synopsis</th>
+  </tr>
+</table>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "https://testapi.io/api/xylorose/historicalmovies", true);
+        xhttp.send();
+        xhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200 && this.statusText == "OK"){
+                var data = JSON.parse(this.responseText);
+                for(var e of data.historical){
+                    $("#history").append("<tr><td><i><strong>"+e.name+"</strong></i></td><td>"+e.yearsactive+"</td><td>"+e.instruments+"</td><td>"+e.birthnames+"</td><td>"+e.genres+"</td></tr>")
+                }
+            }
+        };
+
+    });
+    
+</script>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
